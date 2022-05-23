@@ -1,0 +1,2274 @@
+18-May-22 18:19:05 - Started server process [18132]
+18-May-22 18:19:05 - Waiting for application startup.
+18-May-22 18:19:05 - Application startup complete.
+18-May-22 18:19:47 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 26, in get_posts
+    f = open('../utils/mantenciones.json')
+FileNotFoundError: [Errno 2] No such file or directory: '../utils/mantenciones.json'
+18-May-22 18:20:43 - Started server process [25888]
+18-May-22 18:20:43 - Waiting for application startup.
+18-May-22 18:20:43 - Application startup complete.
+18-May-22 18:20:50 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 26, in get_posts
+    f = open('../utils/mantenciones.json')
+FileNotFoundError: [Errno 2] No such file or directory: '../utils/mantenciones.json'
+18-May-22 18:21:55 - Started server process [9284]
+18-May-22 18:21:55 - Waiting for application startup.
+18-May-22 18:21:55 - Application startup complete.
+18-May-22 18:21:59 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 26, in get_posts
+    f = open('./../utils/mantenciones.json')
+FileNotFoundError: [Errno 2] No such file or directory: './../utils/mantenciones.json'
+18-May-22 18:25:23 - Started server process [21300]
+18-May-22 18:25:23 - Waiting for application startup.
+18-May-22 18:25:23 - Application startup complete.
+18-May-22 18:25:26 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 26, in get_posts
+    f = open('/app/utils/mantenciones.json')
+FileNotFoundError: [Errno 2] No such file or directory: '/app/utils/mantenciones.json'
+18-May-22 18:25:38 - Started server process [4732]
+18-May-22 18:25:38 - Waiting for application startup.
+18-May-22 18:25:38 - Application startup complete.
+18-May-22 18:25:42 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 26, in get_posts
+    f = open('/utils/mantenciones.json')
+FileNotFoundError: [Errno 2] No such file or directory: '/utils/mantenciones.json'
+18-May-22 18:27:22 - Started server process [18724]
+18-May-22 18:27:22 - Waiting for application startup.
+18-May-22 18:27:22 - Application startup complete.
+18-May-22 18:30:48 - Started server process [11448]
+18-May-22 18:30:48 - Waiting for application startup.
+18-May-22 18:30:48 - Application startup complete.
+18-May-22 18:31:59 - Started server process [17168]
+18-May-22 18:31:59 - Waiting for application startup.
+18-May-22 18:31:59 - Application startup complete.
+18-May-22 18:32:55 - Started server process [9848]
+18-May-22 18:32:55 - Waiting for application startup.
+18-May-22 18:32:55 - Application startup complete.
+18-May-22 18:33:00 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 6, in get_mantenciones
+    f = open('./mantenciones.json')
+FileNotFoundError: [Errno 2] No such file or directory: './mantenciones.json'
+18-May-22 18:33:20 - Started server process [16184]
+18-May-22 18:33:20 - Waiting for application startup.
+18-May-22 18:33:20 - Application startup complete.
+18-May-22 18:33:24 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 6, in get_mantenciones
+    f = open('mantenciones.json')
+FileNotFoundError: [Errno 2] No such file or directory: 'mantenciones.json'
+18-May-22 18:35:26 - Started server process [12032]
+18-May-22 18:35:26 - Waiting for application startup.
+18-May-22 18:35:26 - Application startup complete.
+18-May-22 18:35:29 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 6, in get_mantenciones
+    with open('mantenciones.json') as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'mantenciones.json'
+18-May-22 18:40:31 - Started server process [9368]
+18-May-22 18:40:31 - Waiting for application startup.
+18-May-22 18:40:31 - Application startup complete.
+18-May-22 18:40:36 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 6, in get_mantenciones
+    with open('mantenciones.json', 'r') as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'mantenciones.json'
+18-May-22 18:48:21 - Started server process [21940]
+18-May-22 18:48:21 - Waiting for application startup.
+18-May-22 18:48:21 - Application startup complete.
+18-May-22 18:50:42 - Started server process [7820]
+18-May-22 18:50:42 - Waiting for application startup.
+18-May-22 18:50:42 - Application startup complete.
+18-May-22 18:51:30 - Started server process [23460]
+18-May-22 18:51:30 - Waiting for application startup.
+18-May-22 18:51:30 - Application startup complete.
+18-May-22 18:54:21 - Started server process [22228]
+18-May-22 18:54:21 - Waiting for application startup.
+18-May-22 18:54:21 - Application startup complete.
+18-May-22 19:01:15 - Started server process [10000]
+18-May-22 19:01:15 - Waiting for application startup.
+18-May-22 19:01:15 - Application startup complete.
+18-May-22 19:03:36 - Started server process [5464]
+18-May-22 19:03:36 - Waiting for application startup.
+18-May-22 19:03:36 - Application startup complete.
+18-May-22 19:03:49 - Started server process [18504]
+18-May-22 19:03:49 - Waiting for application startup.
+18-May-22 19:03:49 - Application startup complete.
+18-May-22 19:04:59 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 8, in get_mantenciones
+    API_URL = "{}/mantenciones.json".format(
+IndexError: Replacement index 0 out of range for positional args tuple
+18-May-22 19:09:40 - Started server process [26068]
+18-May-22 19:09:40 - Waiting for application startup.
+18-May-22 19:09:40 - Application startup complete.
+18-May-22 19:09:45 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 9, in get_mantenciones
+    API_URL = "{}/mantenciones.json".format(
+IndexError: Replacement index 0 out of range for positional args tuple
+18-May-22 19:12:37 - Started server process [26492]
+18-May-22 19:12:37 - Waiting for application startup.
+18-May-22 19:12:37 - Application startup complete.
+18-May-22 19:12:41 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 9, in get_mantenciones
+    API_URL = "{}/mantenciones.json".format(
+IndexError: Replacement index 0 out of range for positional args tuple
+18-May-22 19:15:17 - Started server process [19412]
+18-May-22 19:15:17 - Waiting for application startup.
+18-May-22 19:15:17 - Application startup complete.
+18-May-22 19:15:27 - Started server process [14452]
+18-May-22 19:15:27 - Waiting for application startup.
+18-May-22 19:15:27 - Application startup complete.
+18-May-22 19:15:34 - Started server process [22124]
+18-May-22 19:15:34 - Waiting for application startup.
+18-May-22 19:15:34 - Application startup complete.
+18-May-22 19:16:05 - Started server process [1600]
+18-May-22 19:16:05 - Waiting for application startup.
+18-May-22 19:16:05 - Application startup complete.
+18-May-22 19:17:43 - Started server process [14276]
+18-May-22 19:17:43 - Waiting for application startup.
+18-May-22 19:17:43 - Application startup complete.
+18-May-22 19:25:45 - Started server process [18756]
+18-May-22 19:25:45 - Waiting for application startup.
+18-May-22 19:25:45 - Application startup complete.
+18-May-22 19:25:53 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 10, in get_mantenciones
+    curr_dir = Path(__file__).parent.replace("\\/", "/")
+TypeError: replace() takes 2 positional arguments but 3 were given
+18-May-22 19:26:45 - Started server process [21612]
+18-May-22 19:26:45 - Waiting for application startup.
+18-May-22 19:26:45 - Application startup complete.
+18-May-22 19:27:57 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 12, in get_mantenciones
+    print(curr_dir.replace("\\/", "/"))
+TypeError: replace() takes 2 positional arguments but 3 were given
+18-May-22 19:28:33 - Started server process [14540]
+18-May-22 19:28:33 - Waiting for application startup.
+18-May-22 19:28:33 - Application startup complete.
+18-May-22 19:28:37 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Python\lib\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Python\lib\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Python\lib\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    data = utils.get_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\utils\utils.py", line 12, in get_mantenciones
+    print(curr_dir.replace('\\', '/'))
+TypeError: replace() takes 2 positional arguments but 3 were given
+18-May-22 19:30:07 - Started server process [25708]
+18-May-22 19:30:07 - Waiting for application startup.
+18-May-22 19:30:07 - Application startup complete.
+18-May-22 19:30:57 - Started server process [3760]
+18-May-22 19:30:57 - Waiting for application startup.
+18-May-22 19:30:57 - Application startup complete.
+18-May-22 19:32:00 - Started server process [8764]
+18-May-22 19:32:00 - Waiting for application startup.
+18-May-22 19:32:00 - Application startup complete.
+18-May-22 19:32:55 - Started server process [10476]
+18-May-22 19:32:55 - Waiting for application startup.
+18-May-22 19:32:55 - Application startup complete.
+18-May-22 19:33:21 - Started server process [25188]
+18-May-22 19:33:21 - Waiting for application startup.
+18-May-22 19:33:21 - Application startup complete.
+18-May-22 20:52:58 - Started server process [24036]
+18-May-22 20:52:58 - Waiting for application startup.
+18-May-22 20:52:58 - Application startup complete.
+18-May-22 21:00:31 - Started server process [10684]
+18-May-22 21:00:31 - Waiting for application startup.
+18-May-22 21:00:31 - Application startup complete.
+18-May-22 21:03:53 - object dict can't be used in 'await' expression
+18-May-22 21:03:53 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\services\floatService.py", line 43, in get_ctr_mantenciones
+    resp = await utils.get_mantenciones()
+TypeError: object dict can't be used in 'await' expression
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 33, in get_posts
+    data = await srv.get_ctr_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\services\floatService.py", line 122, in get_ctr_mantenciones
+    response_data = resp.raise_for_status()
+UnboundLocalError: local variable 'resp' referenced before assignment
+18-May-22 21:04:12 - Started server process [20172]
+18-May-22 21:04:12 - Waiting for application startup.
+18-May-22 21:04:12 - Application startup complete.
+18-May-22 21:04:16 - object dict can't be used in 'await' expression
+18-May-22 21:04:16 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\services\floatService.py", line 43, in get_ctr_mantenciones
+    resp = await utils.get_mantenciones()
+TypeError: object dict can't be used in 'await' expression
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 33, in get_posts
+    data = await srv.get_ctr_mantenciones()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\services\floatService.py", line 122, in get_ctr_mantenciones
+    response_data = resp.raise_for_status()
+UnboundLocalError: local variable 'resp' referenced before assignment
+18-May-22 21:05:30 - Started server process [15060]
+18-May-22 21:05:30 - Waiting for application startup.
+18-May-22 21:05:30 - Application startup complete.
+18-May-22 21:12:50 - object dict can't be used in 'await' expression
+18-May-22 21:13:10 - Started server process [9152]
+18-May-22 21:13:10 - Waiting for application startup.
+18-May-22 21:13:10 - Application startup complete.
+18-May-22 21:16:20 - Started server process [16064]
+18-May-22 21:16:20 - Waiting for application startup.
+18-May-22 21:16:20 - Application startup complete.
+18-May-22 21:52:24 - Started server process [3036]
+18-May-22 21:52:24 - Waiting for application startup.
+18-May-22 21:52:24 - Application startup complete.
+18-May-22 22:06:31 - Started server process [25644]
+18-May-22 22:06:31 - Waiting for application startup.
+18-May-22 22:06:31 - Application startup complete.
+18-May-22 23:50:42 - Started server process [244]
+18-May-22 23:50:42 - Waiting for application startup.
+18-May-22 23:50:42 - Application startup complete.
+18-May-22 23:51:04 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    tax = data_taxis.payload
+AttributeError: 'dict' object has no attribute 'payload'
+18-May-22 23:51:34 - Started server process [26068]
+18-May-22 23:51:34 - Waiting for application startup.
+18-May-22 23:51:34 - Application startup complete.
+18-May-22 23:52:02 - Started server process [16736]
+18-May-22 23:52:02 - Waiting for application startup.
+18-May-22 23:52:02 - Application startup complete.
+18-May-22 23:52:09 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    tax = data_taxis.body
+AttributeError: 'dict' object has no attribute 'body'
+18-May-22 23:52:25 - Started server process [2628]
+18-May-22 23:52:25 - Waiting for application startup.
+18-May-22 23:52:25 - Application startup complete.
+18-May-22 23:52:47 - Started server process [9348]
+18-May-22 23:52:47 - Waiting for application startup.
+18-May-22 23:52:47 - Application startup complete.
+18-May-22 23:53:07 - Started server process [5164]
+18-May-22 23:53:07 - Waiting for application startup.
+18-May-22 23:53:07 - Application startup complete.
+18-May-22 23:53:16 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    tax = data_taxis.body
+AttributeError: 'dict' object has no attribute 'body'
+18-May-22 23:55:22 - Started server process [6632]
+18-May-22 23:55:22 - Waiting for application startup.
+18-May-22 23:55:22 - Application startup complete.
+18-May-22 23:55:24 - Started server process [12548]
+18-May-22 23:55:24 - Waiting for application startup.
+18-May-22 23:55:24 - Application startup complete.
+18-May-22 23:56:36 - Started server process [21236]
+18-May-22 23:56:36 - Waiting for application startup.
+18-May-22 23:56:36 - Application startup complete.
+18-May-22 23:56:41 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 32, in get_posts
+    for index, taxi in enumerate(tax.body):
+AttributeError: 'str' object has no attribute 'body'
+18-May-22 23:57:54 - Started server process [8136]
+18-May-22 23:57:54 - Waiting for application startup.
+18-May-22 23:57:54 - Application startup complete.
+18-May-22 23:58:05 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 32, in get_posts
+    payload: list = tax.body
+AttributeError: 'str' object has no attribute 'body'
+18-May-22 23:58:42 - Started server process [14440]
+18-May-22 23:58:42 - Waiting for application startup.
+18-May-22 23:58:42 - Application startup complete.
+18-May-22 23:59:05 - Started server process [11216]
+18-May-22 23:59:05 - Waiting for application startup.
+18-May-22 23:59:05 - Application startup complete.
+18-May-22 23:59:23 - Started server process [5092]
+18-May-22 23:59:23 - Waiting for application startup.
+18-May-22 23:59:23 - Application startup complete.
+18-May-22 23:59:27 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    tax: any = data_taxis.body
+AttributeError: 'dict' object has no attribute 'body'
+19-May-22 00:01:52 - Started server process [24256]
+19-May-22 00:01:52 - Waiting for application startup.
+19-May-22 00:01:52 - Application startup complete.
+19-May-22 00:01:57 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    tax: any = data_taxis.body
+AttributeError: 'dict' object has no attribute 'body'
+19-May-22 00:02:18 - Started server process [11044]
+19-May-22 00:02:18 - Waiting for application startup.
+19-May-22 00:02:18 - Application startup complete.
+19-May-22 00:02:23 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 31, in get_posts
+    tax = data_taxis.body
+AttributeError: 'dict' object has no attribute 'body'
+19-May-22 00:02:59 - Started server process [18688]
+19-May-22 00:02:59 - Waiting for application startup.
+19-May-22 00:02:59 - Application startup complete.
+19-May-22 00:11:39 - Started server process [25740]
+19-May-22 00:11:39 - Waiting for application startup.
+19-May-22 00:11:39 - Application startup complete.
+19-May-22 00:12:07 - Started server process [23992]
+19-May-22 00:12:07 - Waiting for application startup.
+19-May-22 00:12:07 - Application startup complete.
+19-May-22 00:12:09 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 36, in get_posts
+    for index, service in enumerate(services["payload"]):
+TypeError: string indices must be integers
+19-May-22 00:13:36 - Started server process [20320]
+19-May-22 00:13:36 - Waiting for application startup.
+19-May-22 00:13:36 - Application startup complete.
+19-May-22 00:13:41 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 35, in get_posts
+    print(services["payload"])
+TypeError: string indices must be integers
+19-May-22 00:13:54 - Started server process [12148]
+19-May-22 00:13:54 - Waiting for application startup.
+19-May-22 00:13:54 - Application startup complete.
+19-May-22 00:13:55 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 35, in get_posts
+    print(services["payload"])
+TypeError: string indices must be integers
+19-May-22 00:14:10 - Started server process [21796]
+19-May-22 00:14:10 - Waiting for application startup.
+19-May-22 00:14:10 - Application startup complete.
+19-May-22 00:14:45 - Started server process [19228]
+19-May-22 00:14:45 - Waiting for application startup.
+19-May-22 00:14:45 - Application startup complete.
+19-May-22 00:15:01 - Started server process [20616]
+19-May-22 00:15:01 - Waiting for application startup.
+19-May-22 00:15:01 - Application startup complete.
+19-May-22 00:19:02 - Started server process [18844]
+19-May-22 00:19:02 - Waiting for application startup.
+19-May-22 00:19:02 - Application startup complete.
+19-May-22 00:19:28 - Started server process [19648]
+19-May-22 00:19:28 - Waiting for application startup.
+19-May-22 00:19:28 - Application startup complete.
+19-May-22 00:20:29 - Started server process [7580]
+19-May-22 00:20:29 - Waiting for application startup.
+19-May-22 00:20:29 - Application startup complete.
+19-May-22 00:21:21 - Started server process [17744]
+19-May-22 00:21:21 - Waiting for application startup.
+19-May-22 00:21:21 - Application startup complete.
+19-May-22 00:23:16 - Started server process [25740]
+19-May-22 00:23:16 - Waiting for application startup.
+19-May-22 00:23:16 - Application startup complete.
+19-May-22 00:23:22 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 37, in <lambda>
+    result = filter(lambda x: x.id == 2, services["payload"])
+AttributeError: 'dict' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 235, in app
+    response_data = await serialize_response(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 149, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Python\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [AttributeError("'dict' object has no attribute 'id'"), TypeError('vars() argument must have __dict__ attribute')]
+19-May-22 00:23:50 - Started server process [2484]
+19-May-22 00:23:50 - Waiting for application startup.
+19-May-22 00:23:50 - Application startup complete.
+19-May-22 00:23:54 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\fastapi\encoders.py", line 137, in jsonable_encoder
+    data = dict(obj)
+ValueError: dictionary update sequence element #0 has length 4; 2 is required
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\fastapi\encoders.py", line 141, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 235, in app
+    response_data = await serialize_response(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 149, in serialize_response
+    return jsonable_encoder(response_content)
+  File "C:\Python\lib\site-packages\fastapi\encoders.py", line 144, in jsonable_encoder
+    raise ValueError(errors)
+ValueError: [ValueError('dictionary update sequence element #0 has length 4; 2 is required'), TypeError('vars() argument must have __dict__ attribute')]
+19-May-22 00:24:33 - Started server process [8184]
+19-May-22 00:24:33 - Waiting for application startup.
+19-May-22 00:24:33 - Application startup complete.
+19-May-22 08:44:50 - Shutting down
+19-May-22 08:44:50 - Waiting for application shutdown.
+19-May-22 08:44:50 - Application shutdown complete.
+19-May-22 08:44:50 - Finished server process [8184]
+19-May-22 15:07:57 - Started server process [21516]
+19-May-22 15:07:57 - Waiting for application startup.
+19-May-22 15:07:57 - Application startup complete.
+19-May-22 15:22:04 - Started server process [26032]
+19-May-22 15:22:04 - Waiting for application startup.
+19-May-22 15:22:04 - Application startup complete.
+19-May-22 15:32:41 - Started server process [2668]
+19-May-22 15:32:41 - Waiting for application startup.
+19-May-22 15:32:41 - Application startup complete.
+19-May-22 15:35:27 - Started server process [15212]
+19-May-22 15:35:27 - Waiting for application startup.
+19-May-22 15:35:27 - Application startup complete.
+19-May-22 15:55:48 - Started server process [10648]
+19-May-22 15:55:48 - Waiting for application startup.
+19-May-22 15:55:48 - Application startup complete.
+19-May-22 16:00:41 - Started server process [13548]
+19-May-22 16:00:41 - Waiting for application startup.
+19-May-22 16:00:41 - Application startup complete.
+19-May-22 16:04:44 - Started server process [8704]
+19-May-22 16:04:44 - Waiting for application startup.
+19-May-22 16:04:44 - Application startup complete.
+19-May-22 16:05:09 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 53, in get_posts
+    man_tax = [x for x in taxis["payload"]
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 54, in <listcomp>
+    if x["id_auto"] == car["id"]]
+KeyError: 'id_auto'
+19-May-22 16:07:19 - Started server process [23148]
+19-May-22 16:07:19 - Waiting for application startup.
+19-May-22 16:07:19 - Application startup complete.
+19-May-22 16:21:41 - Started server process [20516]
+19-May-22 16:21:41 - Waiting for application startup.
+19-May-22 16:21:41 - Application startup complete.
+19-May-22 16:34:17 - Started server process [476]
+19-May-22 16:34:17 - Waiting for application startup.
+19-May-22 16:34:17 - Application startup complete.
+19-May-22 16:41:14 - Started server process [8120]
+19-May-22 16:41:14 - Waiting for application startup.
+19-May-22 16:41:14 - Application startup complete.
+19-May-22 17:08:14 - Started server process [19236]
+19-May-22 17:08:14 - Waiting for application startup.
+19-May-22 17:08:14 - Application startup complete.
+19-May-22 17:08:27 - Started server process [2420]
+19-May-22 17:08:27 - Waiting for application startup.
+19-May-22 17:08:27 - Application startup complete.
+19-May-22 17:15:42 - Started server process [25008]
+19-May-22 17:15:42 - Waiting for application startup.
+19-May-22 17:15:42 - Application startup complete.
+19-May-22 18:24:43 - Started server process [21712]
+19-May-22 18:24:43 - Waiting for application startup.
+19-May-22 18:24:43 - Application startup complete.
+19-May-22 18:32:42 - Started server process [20412]
+19-May-22 18:32:42 - Waiting for application startup.
+19-May-22 18:32:42 - Application startup complete.
+19-May-22 18:44:44 - Started server process [24984]
+19-May-22 18:44:44 - Waiting for application startup.
+19-May-22 18:44:44 - Application startup complete.
+19-May-22 18:44:51 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 174, in get_posts
+    coll = await monthIncomeByService()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 164, in monthIncomeByService
+    maintenceData = await maintenanceByServiceId(2)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 54, in maintenanceByServiceId
+    gasolineCost = await mathGasolineCostByService(int(service["unit_cost"]), mantencion["fecha_servicio"], int(car_data[0]["gasoline_tank"]))
+TypeError: 'module' object is not subscriptable
+19-May-22 18:50:59 - Started server process [9140]
+19-May-22 18:50:59 - Waiting for application startup.
+19-May-22 18:50:59 - Application startup complete.
+19-May-22 18:56:20 - Started server process [10552]
+19-May-22 18:56:20 - Waiting for application startup.
+19-May-22 18:56:20 - Application startup complete.
+19-May-22 18:56:22 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 190, in get_posts
+    coll = await monthIncomeByService()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 180, in monthIncomeByService
+    maintenceData = await maintenanceByServiceId(2)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 56, in maintenanceByServiceId
+    gasolineCost = await mathGasolineCostByService(int(service["unit_cost"]), mantencion["fecha_servicio"], int(car_data[0]["gasoline_tank"]))
+TypeError: 'module' object is not subscriptable
+19-May-22 18:57:02 - Started server process [14864]
+19-May-22 18:57:02 - Waiting for application startup.
+19-May-22 18:57:02 - Application startup complete.
+19-May-22 18:57:04 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 190, in get_posts
+    coll = await monthIncomeByService()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 180, in monthIncomeByService
+    maintenceData = await maintenanceByServiceId(2)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 58, in maintenanceByServiceId
+    cost_collection.append(car_data[0])
+KeyError: 0
+19-May-22 18:58:29 - Started server process [4440]
+19-May-22 18:58:29 - Waiting for application startup.
+19-May-22 18:58:29 - Application startup complete.
+19-May-22 18:59:38 - Started server process [13344]
+19-May-22 18:59:38 - Waiting for application startup.
+19-May-22 18:59:38 - Application startup complete.
+19-May-22 19:02:12 - Started server process [16864]
+19-May-22 19:02:12 - Waiting for application startup.
+19-May-22 19:02:12 - Application startup complete.
+19-May-22 19:02:24 - Started server process [9692]
+19-May-22 19:02:24 - Waiting for application startup.
+19-May-22 19:02:24 - Application startup complete.
+19-May-22 19:07:05 - Started server process [15584]
+19-May-22 19:07:05 - Waiting for application startup.
+19-May-22 19:07:05 - Application startup complete.
+19-May-22 19:09:39 - Started server process [7740]
+19-May-22 19:09:39 - Waiting for application startup.
+19-May-22 19:09:39 - Application startup complete.
+19-May-22 19:22:40 - Started server process [22856]
+19-May-22 19:22:40 - Waiting for application startup.
+19-May-22 19:22:40 - Application startup complete.
+19-May-22 19:22:54 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 200, in get_posts
+    coll = await monthIncomeByService()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 190, in monthIncomeByService
+    maintenceData = await maintenanceByServiceId(2)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 69, in maintenanceByServiceId
+    filterActualByMonth = tuple(
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 70, in <lambda>
+    filter(lambda x: x["date"].split("-")[0] == date.today().split("-")[1], cost_collection))
+AttributeError: 'datetime.date' object has no attribute 'split'
+19-May-22 19:24:03 - Started server process [15848]
+19-May-22 19:24:03 - Waiting for application startup.
+19-May-22 19:24:03 - Application startup complete.
+19-May-22 19:28:37 - Started server process [10068]
+19-May-22 19:28:37 - Waiting for application startup.
+19-May-22 19:28:37 - Application startup complete.
+19-May-22 19:29:19 - Started server process [21052]
+19-May-22 19:29:19 - Waiting for application startup.
+19-May-22 19:29:19 - Application startup complete.
+19-May-22 19:29:41 - Started server process [19056]
+19-May-22 19:29:41 - Waiting for application startup.
+19-May-22 19:29:41 - Application startup complete.
+19-May-22 19:31:01 - Started server process [18876]
+19-May-22 19:31:01 - Waiting for application startup.
+19-May-22 19:31:01 - Application startup complete.
+19-May-22 19:34:32 - Started server process [2848]
+19-May-22 19:34:32 - Waiting for application startup.
+19-May-22 19:34:32 - Application startup complete.
+19-May-22 19:40:46 - Started server process [16752]
+19-May-22 19:40:46 - Waiting for application startup.
+19-May-22 19:40:46 - Application startup complete.
+19-May-22 19:42:41 - Started server process [24012]
+19-May-22 19:42:41 - Waiting for application startup.
+19-May-22 19:42:41 - Application startup complete.
+19-May-22 19:49:25 - Started server process [19024]
+19-May-22 19:49:25 - Waiting for application startup.
+19-May-22 19:49:25 - Application startup complete.
+19-May-22 19:50:07 - Started server process [26064]
+19-May-22 19:50:07 - Waiting for application startup.
+19-May-22 19:50:07 - Application startup complete.
+19-May-22 19:58:11 - Started server process [17232]
+19-May-22 19:58:11 - Waiting for application startup.
+19-May-22 19:58:11 - Application startup complete.
+19-May-22 20:00:56 - Started server process [7988]
+19-May-22 20:00:56 - Waiting for application startup.
+19-May-22 20:00:56 - Application startup complete.
+19-May-22 20:06:45 - Started server process [8760]
+19-May-22 20:06:45 - Waiting for application startup.
+19-May-22 20:06:45 - Application startup complete.
+19-May-22 20:07:54 - Started server process [22632]
+19-May-22 20:07:54 - Waiting for application startup.
+19-May-22 20:07:54 - Application startup complete.
+19-May-22 20:09:13 - Started server process [5676]
+19-May-22 20:09:13 - Waiting for application startup.
+19-May-22 20:09:13 - Application startup complete.
+19-May-22 20:25:12 - Started server process [8064]
+19-May-22 20:25:12 - Waiting for application startup.
+19-May-22 20:25:12 - Application startup complete.
+19-May-22 20:31:46 - Started server process [22428]
+19-May-22 20:31:46 - Waiting for application startup.
+19-May-22 20:31:46 - Application startup complete.
+19-May-22 20:34:19 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 295, in get_service_count
+    data = await countServiceByMonth()
+TypeError: countServiceByMonth() missing 1 required positional argument: 'id'
+19-May-22 20:34:59 - Started server process [6708]
+19-May-22 20:34:59 - Waiting for application startup.
+19-May-22 20:34:59 - Application startup complete.
+19-May-22 20:38:49 - Started server process [12920]
+19-May-22 20:38:49 - Waiting for application startup.
+19-May-22 20:38:49 - Application startup complete.
+19-May-22 20:48:18 - Started server process [25544]
+19-May-22 20:48:18 - Waiting for application startup.
+19-May-22 20:48:18 - Application startup complete.
+19-May-22 20:50:37 - Started server process [17604]
+19-May-22 20:50:37 - Waiting for application startup.
+19-May-22 20:50:37 - Application startup complete.
+19-May-22 20:54:46 - Started server process [676]
+19-May-22 20:54:46 - Waiting for application startup.
+19-May-22 20:54:46 - Application startup complete.
+19-May-22 20:58:28 - Started server process [6040]
+19-May-22 20:58:28 - Waiting for application startup.
+19-May-22 20:58:28 - Application startup complete.
+19-May-22 21:27:00 - Started server process [16676]
+19-May-22 21:27:00 - Waiting for application startup.
+19-May-22 21:27:00 - Application startup complete.
+19-May-22 21:28:17 - Started server process [15236]
+19-May-22 21:28:17 - Waiting for application startup.
+19-May-22 21:28:17 - Application startup complete.
+19-May-22 21:32:21 - Started server process [22704]
+19-May-22 21:32:21 - Waiting for application startup.
+19-May-22 21:32:21 - Application startup complete.
+19-May-22 21:33:01 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 321, in get_service_count
+    data = await tenMostExpensiveServices()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\postsController.py", line 269, in tenMostExpensiveServices
+    await data.sort(key=sortBiggerAmounts)
+TypeError: '<' not supported between instances of 'coroutine' and 'coroutine'
+19-May-22 21:33:41 - Started server process [6584]
+19-May-22 21:33:41 - Waiting for application startup.
+19-May-22 21:33:41 - Application startup complete.
+19-May-22 21:35:11 - Started server process [22580]
+19-May-22 21:35:11 - Waiting for application startup.
+19-May-22 21:35:11 - Application startup complete.
+19-May-22 21:38:39 - Started server process [7592]
+19-May-22 21:38:39 - Waiting for application startup.
+19-May-22 21:38:39 - Application startup complete.
+19-May-22 21:45:28 - Started server process [22480]
+19-May-22 21:45:28 - Waiting for application startup.
+19-May-22 21:45:28 - Application startup complete.
+19-May-22 21:48:19 - Started server process [16060]
+19-May-22 21:48:19 - Waiting for application startup.
+19-May-22 21:48:19 - Application startup complete.
+19-May-22 21:49:35 - Started server process [344]
+19-May-22 21:49:35 - Waiting for application startup.
+19-May-22 21:49:35 - Application startup complete.
+19-May-22 21:52:21 - Started server process [16272]
+19-May-22 21:52:21 - Waiting for application startup.
+19-May-22 21:52:21 - Application startup complete.
+19-May-22 21:52:59 - Started server process [14488]
+19-May-22 21:52:59 - Waiting for application startup.
+19-May-22 21:52:59 - Application startup complete.
+19-May-22 22:04:49 - Started server process [27104]
+19-May-22 22:04:49 - Waiting for application startup.
+19-May-22 22:04:49 - Application startup complete.
+19-May-22 22:07:39 - Started server process [22404]
+19-May-22 22:07:39 - Waiting for application startup.
+19-May-22 22:07:39 - Application startup complete.
+19-May-22 22:09:12 - Started server process [22044]
+19-May-22 22:09:12 - Waiting for application startup.
+19-May-22 22:09:12 - Application startup complete.
+19-May-22 22:33:35 - Started server process [12068]
+19-May-22 22:33:35 - Waiting for application startup.
+19-May-22 22:33:35 - Application startup complete.
+19-May-22 23:01:04 - Started server process [19284]
+19-May-22 23:01:04 - Waiting for application startup.
+19-May-22 23:01:04 - Application startup complete.
+19-May-22 23:03:27 - Started server process [13820]
+19-May-22 23:03:27 - Waiting for application startup.
+19-May-22 23:03:27 - Application startup complete.
+19-May-22 23:04:23 - Started server process [1016]
+19-May-22 23:04:23 - Waiting for application startup.
+19-May-22 23:04:23 - Application startup complete.
+19-May-22 23:05:13 - Started server process [21672]
+19-May-22 23:05:13 - Waiting for application startup.
+19-May-22 23:05:13 - Application startup complete.
+19-May-22 23:17:04 - Started server process [18580]
+19-May-22 23:17:04 - Waiting for application startup.
+19-May-22 23:17:04 - Application startup complete.
+19-May-22 23:19:11 - Started server process [24496]
+19-May-22 23:19:11 - Waiting for application startup.
+19-May-22 23:19:11 - Application startup complete.
+19-May-22 23:25:30 - Started server process [19740]
+19-May-22 23:25:30 - Waiting for application startup.
+19-May-22 23:25:30 - Application startup complete.
+19-May-22 23:26:43 - Started server process [5676]
+19-May-22 23:26:43 - Waiting for application startup.
+19-May-22 23:26:43 - Application startup complete.
+19-May-22 23:38:36 - Started server process [14288]
+19-May-22 23:38:36 - Waiting for application startup.
+19-May-22 23:38:36 - Application startup complete.
+19-May-22 23:43:02 - Started server process [16292]
+19-May-22 23:43:02 - Waiting for application startup.
+19-May-22 23:43:02 - Application startup complete.
+19-May-22 23:43:05 - Started server process [11580]
+19-May-22 23:43:05 - Waiting for application startup.
+19-May-22 23:43:05 - Application startup complete.
+19-May-22 23:54:14 - Started server process [25668]
+19-May-22 23:54:14 - Waiting for application startup.
+19-May-22 23:54:14 - Application startup complete.
+20-May-22 00:08:28 - Started server process [3640]
+20-May-22 00:08:28 - Waiting for application startup.
+20-May-22 00:08:28 - Application startup complete.
+20-May-22 00:10:04 - Started server process [25800]
+20-May-22 00:10:04 - Waiting for application startup.
+20-May-22 00:10:04 - Application startup complete.
+20-May-22 00:13:01 - Started server process [12056]
+20-May-22 00:13:01 - Waiting for application startup.
+20-May-22 00:13:01 - Application startup complete.
+20-May-22 00:40:05 - Shutting down
+20-May-22 00:40:05 - Waiting for application shutdown.
+20-May-22 00:40:05 - Application shutdown complete.
+20-May-22 00:40:05 - Finished server process [12056]
+20-May-22 11:48:40 - Started server process [21440]
+20-May-22 11:48:40 - Waiting for application startup.
+20-May-22 11:48:40 - Application startup complete.
+20-May-22 12:07:39 - Started server process [9496]
+20-May-22 12:07:39 - Waiting for application startup.
+20-May-22 12:07:39 - Application startup complete.
+20-May-22 12:08:15 - Started server process [25348]
+20-May-22 12:08:15 - Waiting for application startup.
+20-May-22 12:08:15 - Application startup complete.
+20-May-22 12:09:25 - Started server process [1708]
+20-May-22 12:09:25 - Waiting for application startup.
+20-May-22 12:09:25 - Application startup complete.
+20-May-22 12:20:44 - Started server process [6844]
+20-May-22 12:20:44 - Waiting for application startup.
+20-May-22 12:20:44 - Application startup complete.
+20-May-22 12:57:13 - Started server process [24716]
+20-May-22 12:57:13 - Waiting for application startup.
+20-May-22 12:57:13 - Application startup complete.
+20-May-22 12:59:24 - Started server process [9460]
+20-May-22 12:59:24 - Waiting for application startup.
+20-May-22 12:59:24 - Application startup complete.
+20-May-22 13:02:17 - Started server process [15648]
+20-May-22 13:02:17 - Waiting for application startup.
+20-May-22 13:02:17 - Application startup complete.
+20-May-22 14:00:34 - Started server process [23076]
+20-May-22 14:00:34 - Waiting for application startup.
+20-May-22 14:00:34 - Application startup complete.
+20-May-22 14:27:03 - Started server process [23948]
+20-May-22 14:27:03 - Waiting for application startup.
+20-May-22 14:27:03 - Application startup complete.
+20-May-22 14:43:07 - Started server process [10316]
+20-May-22 14:43:07 - Waiting for application startup.
+20-May-22 14:43:07 - Application startup complete.
+20-May-22 14:43:42 - Started server process [25460]
+20-May-22 14:43:42 - Waiting for application startup.
+20-May-22 14:43:42 - Application startup complete.
+20-May-22 15:38:55 - Started server process [27216]
+20-May-22 15:38:55 - Waiting for application startup.
+20-May-22 15:38:55 - Application startup complete.
+20-May-22 15:42:01 - Started server process [13456]
+20-May-22 15:42:01 - Waiting for application startup.
+20-May-22 15:42:01 - Application startup complete.
+20-May-22 16:01:43 - Started server process [26120]
+20-May-22 16:01:43 - Waiting for application startup.
+20-May-22 16:01:43 - Application startup complete.
+20-May-22 16:10:23 - Started server process [19464]
+20-May-22 16:10:23 - Waiting for application startup.
+20-May-22 16:10:23 - Application startup complete.
+20-May-22 16:56:49 - Started server process [26472]
+20-May-22 16:56:49 - Waiting for application startup.
+20-May-22 16:56:49 - Application startup complete.
+20-May-22 17:00:45 - Started server process [19048]
+20-May-22 17:00:45 - Waiting for application startup.
+20-May-22 17:00:45 - Application startup complete.
+20-May-22 17:06:27 - Started server process [14180]
+20-May-22 17:06:27 - Waiting for application startup.
+20-May-22 17:06:27 - Application startup complete.
+20-May-22 17:11:06 - Started server process [16160]
+20-May-22 17:11:06 - Waiting for application startup.
+20-May-22 17:11:06 - Application startup complete.
+20-May-22 17:12:02 - Started server process [26204]
+20-May-22 17:12:02 - Waiting for application startup.
+20-May-22 17:12:02 - Application startup complete.
+20-May-22 17:26:30 - Started server process [2420]
+20-May-22 17:26:30 - Waiting for application startup.
+20-May-22 17:26:30 - Application startup complete.
+20-May-22 17:27:04 - Started server process [19656]
+20-May-22 17:27:04 - Waiting for application startup.
+20-May-22 17:27:04 - Application startup complete.
+20-May-22 17:30:01 - Started server process [20400]
+20-May-22 17:30:01 - Waiting for application startup.
+20-May-22 17:30:01 - Application startup complete.
+20-May-22 17:30:25 - Started server process [25992]
+20-May-22 17:30:25 - Waiting for application startup.
+20-May-22 17:30:25 - Application startup complete.
+20-May-22 17:34:47 - Started server process [27340]
+20-May-22 17:34:47 - Waiting for application startup.
+20-May-22 17:34:47 - Application startup complete.
+20-May-22 17:35:19 - Started server process [7548]
+20-May-22 17:35:19 - Waiting for application startup.
+20-May-22 17:35:19 - Application startup complete.
+20-May-22 17:42:54 - Started server process [18860]
+20-May-22 17:42:54 - Waiting for application startup.
+20-May-22 17:42:54 - Application startup complete.
+20-May-22 17:45:05 - Started server process [10320]
+20-May-22 17:45:05 - Waiting for application startup.
+20-May-22 17:45:05 - Application startup complete.
+20-May-22 17:46:28 - Started server process [26632]
+20-May-22 17:46:28 - Waiting for application startup.
+20-May-22 17:46:28 - Application startup complete.
+20-May-22 17:50:43 - Started server process [13168]
+20-May-22 17:50:43 - Waiting for application startup.
+20-May-22 17:50:43 - Application startup complete.
+20-May-22 17:51:00 - Started server process [9760]
+20-May-22 17:51:00 - Waiting for application startup.
+20-May-22 17:51:00 - Application startup complete.
+20-May-22 17:51:23 - Started server process [19360]
+20-May-22 17:51:23 - Waiting for application startup.
+20-May-22 17:51:23 - Application startup complete.
+20-May-22 17:57:27 - Started server process [940]
+20-May-22 17:57:27 - Waiting for application startup.
+20-May-22 17:57:27 - Application startup complete.
+20-May-22 17:59:09 - Started server process [13532]
+20-May-22 17:59:09 - Waiting for application startup.
+20-May-22 17:59:09 - Application startup complete.
+20-May-22 17:59:21 - Started server process [26976]
+20-May-22 17:59:21 - Waiting for application startup.
+20-May-22 17:59:21 - Application startup complete.
+20-May-22 18:01:26 - Started server process [22484]
+20-May-22 18:01:26 - Waiting for application startup.
+20-May-22 18:01:26 - Application startup complete.
+20-May-22 18:01:53 - Started server process [17148]
+20-May-22 18:01:53 - Waiting for application startup.
+20-May-22 18:01:53 - Application startup complete.
+20-May-22 18:02:55 - Started server process [24884]
+20-May-22 18:02:55 - Waiting for application startup.
+20-May-22 18:02:55 - Application startup complete.
+21-May-22 03:26:21 - Started server process [16892]
+21-May-22 03:26:21 - Waiting for application startup.
+21-May-22 03:26:21 - Application startup complete.
+21-May-22 10:35:51 - Started server process [23964]
+21-May-22 10:35:51 - Waiting for application startup.
+21-May-22 10:35:51 - Application startup complete.
+21-May-22 12:13:37 - Started server process [25856]
+21-May-22 12:13:37 - Waiting for application startup.
+21-May-22 12:13:37 - Application startup complete.
+21-May-22 12:20:01 - Started server process [11604]
+21-May-22 12:20:01 - Waiting for application startup.
+21-May-22 12:20:01 - Application startup complete.
+21-May-22 12:29:58 - Started server process [6896]
+21-May-22 12:29:58 - Waiting for application startup.
+21-May-22 12:29:58 - Application startup complete.
+21-May-22 12:31:51 - Started server process [12972]
+21-May-22 12:31:51 - Waiting for application startup.
+21-May-22 12:31:51 - Application startup complete.
+21-May-22 12:32:04 - Started server process [12052]
+21-May-22 12:32:04 - Waiting for application startup.
+21-May-22 12:32:04 - Application startup complete.
+21-May-22 12:33:09 - Started server process [18308]
+21-May-22 12:33:09 - Waiting for application startup.
+21-May-22 12:33:09 - Application startup complete.
+21-May-22 12:35:47 - Started server process [19336]
+21-May-22 12:35:47 - Waiting for application startup.
+21-May-22 12:35:47 - Application startup complete.
+21-May-22 12:39:22 - Started server process [24468]
+21-May-22 12:39:22 - Waiting for application startup.
+21-May-22 12:39:22 - Application startup complete.
+21-May-22 12:41:35 - Started server process [14192]
+21-May-22 12:41:35 - Waiting for application startup.
+21-May-22 12:41:35 - Application startup complete.
+21-May-22 12:44:46 - Started server process [21352]
+21-May-22 12:44:46 - Waiting for application startup.
+21-May-22 12:44:46 - Application startup complete.
+21-May-22 12:47:11 - Started server process [1488]
+21-May-22 12:47:11 - Waiting for application startup.
+21-May-22 12:47:11 - Application startup complete.
+21-May-22 12:47:28 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Python\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 325, in get_service_topten
+    data = await tenMostExpensiveServices()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 241, in tenMostExpensiveServices
+    maintenceData = await maintenanceByServiceId(service["id"])
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 82, in maintenanceByServiceId
+    car = await getCar(int(mantencion["id_auto"]))
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 163, in getCar
+    _car = [x for x in car["payload"] if x["id"] == id]
+TypeError: string indices must be integers
+21-May-22 12:47:29 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Python\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 338, in get_service_count
+    data = await monthCountByService()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 271, in monthCountByService
+    maintenceData = await countServiceByMonth(service["id"])
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 135, in countServiceByMonth
+    car = await getCar(int(mantencion["id_auto"]))
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 163, in getCar
+    _car = [x for x in car["payload"] if x["id"] == id]
+TypeError: string indices must be integers
+21-May-22 12:47:29 - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Python\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Python\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Python\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Python\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Python\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Python\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Python\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Python\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 351, in get_service_cost
+    data = await monthIncomeByService()
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 296, in monthIncomeByService
+    maintenceData = await maintenanceByServiceId(service["id"])
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 82, in maintenanceByServiceId
+    car = await getCar(int(mantencion["id_auto"]))
+  File "C:\xampp\htdocs\phyton\fastApi\fastapi-restapi-crud\app\.\controllers\fleetController.py", line 163, in getCar
+    _car = [x for x in car["payload"] if x["id"] == id]
+TypeError: string indices must be integers
+21-May-22 12:48:28 - Started server process [17876]
+21-May-22 12:48:28 - Waiting for application startup.
+21-May-22 12:48:28 - Application startup complete.
+21-May-22 12:50:12 - Started server process [17096]
+21-May-22 12:50:12 - Waiting for application startup.
+21-May-22 12:50:12 - Application startup complete.
+21-May-22 12:51:30 - Started server process [27428]
+21-May-22 12:51:30 - Waiting for application startup.
+21-May-22 12:51:30 - Application startup complete.
+22-May-22 23:25:07 - Started server process [17616]
+22-May-22 23:25:07 - Waiting for application startup.
+22-May-22 23:25:07 - Application startup complete.
+22-May-22 23:28:00 - Started server process [2668]
+22-May-22 23:28:00 - Waiting for application startup.
+22-May-22 23:28:00 - Application startup complete.
+22-May-22 23:34:27 - Shutting down
+22-May-22 23:34:27 - Waiting for application shutdown.
+22-May-22 23:34:27 - Application shutdown complete.
+22-May-22 23:34:27 - Finished server process [2668]

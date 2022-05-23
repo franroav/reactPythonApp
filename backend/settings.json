@@ -1,0 +1,23 @@
+{
+  "production": {
+    "apiVer": "v1.0",
+    "type": "PRODUCTION",
+    "port": 7000,
+    "api_key": "YOUR_API_KEY_FROM",
+    "action": "copy this to settings.json with real values."
+  },
+  "develop": {
+    "apiVer": "v1.0",
+    "type": "DEVELOP",
+    "port": 8000,
+    "api_key": "YOUR_API_KEY_FROM",
+    "action": "copy this to settings.json with real values."
+  },
+  "QA": {
+    "apiVer": "v1.0",
+    "type": "QA",
+    "port": 5000,
+    "api_key": "YOUR_API_KEY_FROM",
+    "action": "copy this to settings.json with real values."
+  }
+}

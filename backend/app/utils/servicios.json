@@ -1,0 +1,66 @@
+{
+  "title": "Servicios",
+  "statusCode": 200,
+  "payload": [
+    {
+      "id": 1,
+      "service_name": "bencina-97",
+      "unit_cost": 890,
+      "category_service": "bencina"
+    },
+    {
+      "id": 2,
+      "service_name": "bencina-95",
+      "unit_cost": 850,
+      "category_service": "bencina"
+    },
+    {
+      "id": 3,
+      "service_name": "bencina-93",
+      "unit_cost": 818,
+      "category_service": "bencina"
+    },
+    {
+      "id": 4,
+      "service_name": "bencina-diesel",
+      "unit_cost": 670,
+      "category_service": "bencina"
+    },
+    {
+      "id": 5,
+      "service_name": "aceite-10w",
+      "unit_cost": 6500,
+      "category_service": "aceite"
+    },
+    {
+      "id": 6,
+      "service_name": "aceite-20w",
+      "unit_cost": 7500,
+      "category_service": "aceite"
+    },
+    {
+      "id": 7,
+      "service_name": "aceite-30w",
+      "unit_cost": 8000,
+      "category_service": "aceite"
+    },
+    {
+      "id": 8,
+      "service_name": "presion-psi",
+      "unit_cost": 200,
+      "category_service": "presion"
+    },
+    {
+      "id": 9,
+      "service_name": "lavado-tapiz",
+      "unit_cost": 15000,
+      "category_service": "lavado"
+    },
+    {
+      "id": 10,
+      "service_name": "lavado-exterior",
+      "unit_cost": 10000,
+      "category_service": "lavado"
+    }
+  ]
+}

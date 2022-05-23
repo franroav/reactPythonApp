@@ -1,0 +1,256 @@
+{
+  "title": "Taxis",
+  "statusCode": 200,
+  "payload": [
+    {
+      "id": 1,
+      "modelo": "V16",
+      "ano": 2012,
+      "marca": "Nissan",
+      "km": 405943,
+      "oil_tank": 11,
+      "gasoline_tank": 40,
+      "presion": 30
+    },
+    {
+      "id": 2,
+      "modelo": "V18",
+      "ano": 2002,
+      "marca": "Nissan",
+      "km": 270764,
+      "oil_tank": 12,
+      "gasoline_tank": 45,
+      "presion": 31
+    },
+    {
+      "id": 3,
+      "modelo": "Tiida",
+      "ano": 2005,
+      "marca": "Nissan",
+      "km": 244704,
+      "oil_tank": 15,
+      "gasoline_tank": 45,
+      "presion": 30
+    },
+    {
+      "id": 4,
+      "modelo": "Spark",
+      "ano": 2002,
+      "marca": "Chevrolet",
+      "km": 351057,
+      "oil_tank": 12,
+      "gasoline_tank": 40,
+      "presion": 32
+    },
+    {
+      "id": 5,
+      "modelo": "March",
+      "ano": 2012,
+      "marca": "Nissan",
+      "km": 334837,
+      "oil_tank": 12,
+      "gasoline_tank": 40,
+      "presion": 29
+    },
+    {
+      "id": 6,
+      "modelo": "Civic",
+      "ano": 2002,
+      "marca": "Honda",
+      "km": 188189,
+      "oil_tank": 17,
+      "gasoline_tank": 55,
+      "presion": 28
+    },
+    {
+      "id": 7,
+      "modelo": "Gol",
+      "ano": 2002,
+      "marca": "Volkswagen",
+      "km": 269257,
+      "oil_tank": 13,
+      "gasoline_tank": 45,
+      "presion": 30
+    },
+    {
+      "id": 8,
+      "modelo": "i10",
+      "ano": 2010,
+      "marca": "Hyundai",
+      "km": 343027,
+      "oil_tank": 11,
+      "gasoline_tank": 40,
+      "presion": 31
+    },
+    {
+      "id": 9,
+      "modelo": "Passat",
+      "ano": 2009,
+      "marca": "Volkswagen",
+      "km": 324819,
+      "oil_tank": 18,
+      "gasoline_tank": 60,
+      "presion": 29
+    },
+    {
+      "id": 10,
+      "modelo": "500",
+      "ano": 2005,
+      "marca": "Fiat",
+      "km": 170191,
+      "oil_tank": 13,
+      "gasoline_tank": 45,
+      "presion": 32
+    },
+    {
+      "id": 11,
+      "modelo": "Corsa",
+      "ano": 2003,
+      "marca": "Opel",
+      "km": 146267,
+      "oil_tank": 14,
+      "gasoline_tank": 45,
+      "presion": 29
+    },
+    {
+      "id": 12,
+      "modelo": "Focus",
+      "ano": 2003,
+      "marca": "Ford",
+      "km": 354106,
+      "oil_tank": 17,
+      "gasoline_tank": 45,
+      "presion": 32
+    },
+    {
+      "id": 13,
+      "modelo": "308",
+      "ano": 2008,
+      "marca": "Peugeot",
+      "km": 471963,
+      "oil_tank": 16,
+      "gasoline_tank": 48,
+      "presion": 31
+    },
+    {
+      "id": 14,
+      "modelo": "A3",
+      "ano": 2010,
+      "marca": "Audi",
+      "km": 288665,
+      "oil_tank": 18,
+      "gasoline_tank": 55,
+      "presion": 32
+    },
+    {
+      "id": 15,
+      "modelo": "Lancer",
+      "ano": 2012,
+      "marca": "Mitsubishi",
+      "km": 234476,
+      "oil_tank": 15,
+      "gasoline_tank": 55,
+      "presion": 31
+    },
+    {
+      "id": 16,
+      "modelo": "Rio",
+      "ano": 2006,
+      "marca": "Kia",
+      "km": 161073,
+      "oil_tank": 15,
+      "gasoline_tank": 50,
+      "presion": 30
+    },
+    {
+      "id": 17,
+      "modelo": "Pop",
+      "ano": 2011,
+      "marca": "Kia",
+      "km": 239473,
+      "oil_tank": 10,
+      "gasoline_tank": 40,
+      "presion": 31
+    },
+    {
+      "id": 18,
+      "modelo": "V16",
+      "ano": 2011,
+      "marca": "Nissan",
+      "km": 246599,
+      "oil_tank": 11,
+      "gasoline_tank": 40,
+      "presion": 29
+    },
+    {
+      "id": 19,
+      "modelo": "V16",
+      "ano": 2004,
+      "marca": "Nissan",
+      "km": 182833,
+      "oil_tank": 11,
+      "gasoline_tank": 40,
+      "presion": 31
+    },
+    {
+      "id": 20,
+      "modelo": "Tiida",
+      "ano": 2006,
+      "marca": "Nissan",
+      "km": 213358,
+      "oil_tank": 15,
+      "gasoline_tank": 45,
+      "presion": 30
+    },
+    {
+      "id": 21,
+      "modelo": "March",
+      "ano": 2004,
+      "marca": "Nissan",
+      "km": 225330,
+      "oil_tank": 12,
+      "gasoline_tank": 40,
+      "presion": 30
+    },
+    {
+      "id": 22,
+      "modelo": "Passat",
+      "ano": 2006,
+      "marca": "Volkswagen",
+      "km": 216410,
+      "oil_tank": 18,
+      "gasoline_tank": 60,
+      "presion": 29
+    },
+    {
+      "id": 23,
+      "modelo": "Pop",
+      "ano": 2013,
+      "marca": "Kia",
+      "km": 267193,
+      "oil_tank": 10,
+      "gasoline_tank": 40,
+      "presion": 30
+    },
+    {
+      "id": 24,
+      "modelo": "Corsa",
+      "ano": 2007,
+      "marca": "Opel",
+      "km": 399649,
+      "oil_tank": 14,
+      "gasoline_tank": 45,
+      "presion": 28
+    },
+    {
+      "id": 25,
+      "modelo": "Civic",
+      "ano": 2003,
+      "marca": "Honda",
+      "km": 438885,
+      "oil_tank": 17,
+      "gasoline_tank": 55,
+      "presion": 28
+    }
+  ]
+}
